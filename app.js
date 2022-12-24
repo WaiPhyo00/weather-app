@@ -14,7 +14,7 @@ app.post("/", (req, res) => {
     //latitude: 16.871311, longitude: 96.199379,
     const lat = req.body.latitude;
     const lon = req.body.longitude;
-    const apiKey = "afd858c8860c692b4c817aee4447a205";
+    const apiKey = "apiKey";
     const unit = "metric";
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit}`;
     https.get(url, (response) => {
